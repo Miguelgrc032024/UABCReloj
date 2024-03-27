@@ -49,7 +49,7 @@ end
 
 assign sel1=(S1==2) ? 1'b1 : 1'b0;
 assign aux2=(sel1|sel24);
-assign D1=(aux2) ? 4'b00 : S1+1;
+assign D1=(aux2) ? 2'b00 : S1+1;
 
 
 
