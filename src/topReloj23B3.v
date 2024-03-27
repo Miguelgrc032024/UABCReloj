@@ -140,10 +140,14 @@ decod U12(
 );
 
 
-and U13(sl1,C1,f2);
-and U15(sl2,C2,f2);
-and U17(sl3,C3,f2);
+//and U13(sl1,C1,f2);
+//and U15(sl2,C2,f2);
+//and U17(sl3,C3,f2);
 
+assign sl1=(C1&f2); //U13
+assign sl2=(C2&f2); //U15
+assign sl3=(C3&f2); //U17
+  
 //Multiplexores
 assign M0=(sl1) ? 4'b1111 : M0A;  //U14
 assign M1=(sl2) ? 4'b1111 : M1A;  //U16
