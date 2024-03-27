@@ -98,7 +98,7 @@ c_uriel023c U4(
 c_ame09 U7(
 .clk(f100),  //entrada cuenta en flanco negativo
 .rst(rst),  // entrada (0=rst)
-.ya(f10),   //salida 1 cuando salida es 9
+.ya(f10)   //salida 1 cuando salida es 9
 );
 
 c_mel04 U8(
@@ -156,3 +156,5 @@ assign ck3b=(C3) ? PH  : ck3;  //U22
 
 assign Dots=f0;
 endmodule
+
+
